@@ -72,11 +72,21 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: inherit;
+    
+}
 .profile-card{
+
     text-align: center;
     padding: 2rem 1rem;
     overflow: hidden;
+    min-width: 375px;
+    min-height: 480px;
 }
 
 .profile-card img{
@@ -103,7 +113,7 @@ a{
 }
 .social-links{
     text-decoration: none;
-    margin: 1rem 1.3rem 2rem 1.3rem;
+    margin: 1rem 1.3rem 0rem 1.3rem;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -111,7 +121,7 @@ a{
     gap: 1rem;
 }
 .link-item{
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
     border:none;
     transition: background-color 0.3s, box-shadow 0.3s;
     display: flex;
@@ -146,7 +156,7 @@ footer{
     margin: 0.5rem 1rem 1rem 1rem;
     font-size: 0.75rem;
     color: var(--White);
-    padding: 10px;
+    padding: 1rem;
 
 }
 footer a{
